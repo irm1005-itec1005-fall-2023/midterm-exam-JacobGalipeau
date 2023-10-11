@@ -4,6 +4,141 @@
  * You got this!
  */
 
+ .flex-container {
+  height: 600px;
+display: flex;
+flex-direction: column-reverse;
+justify-content: start;
+  align-items: center;
+}
+
+.item:nth-child(2) {
+  background-color: #f1faee;
+  color: #242121;
+  flex-grow: 1;
+}
+
+.flex-container {
+  border: 1px solid #f1faee;
+  border-radius: 10px;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  margin: 0px;
+  text-align: center;
+  border-radius: 10px;
+
+}
+
+.item:first-child{
+  margin-left: 0px;
+}
+
+.item:last-child {
+  margin-right: 0px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d3b59a;
+  color: #242121;
+  font-size: 1.5rem;
+  line-height: 1.6;
+
+  min-width: 100%;
+  min-height: 100%;
+
+  
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: stretch;
+}
+
+header {
+  background-color: #d3b59a;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .box-container {
+
+  padding: 50px;
+  width: 500px;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color:  #e5dcd3;
+  color: #714e31;
+  border-radius: 20px;
+  box-shadow: #e5dcd3 0px 8px 40px;
+}
+
+main h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.25rem;
+  margin: 0 0 1rem 0;
+  color: #714e31;
+}
+
+main h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2.5;
+  margin:0 0 1rem 0;
+  color: #714e31;
+}
+
+main h3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5;
+  margin:0 0 1rem 0;
+  color: #714e31;
+}
+
+main form {
+  text-align: center;
+  background-color: #563622;
+  margin:0 0 1rem 0;
+}
+main button {
+  text-align: center;
+  background-color: #563622;
+  color: #e5dcd3;
+}
+
 /*
  * COLOUR PALETTE
  *
@@ -30,6 +165,10 @@
 
 html {
   font-size: 1.0rem;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
